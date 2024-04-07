@@ -11,6 +11,7 @@
 		71FAD7DC2BBAB9C800C8064F /* NetworkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FAD7D12BBAB9C800C8064F /* NetworkFramework.framework */; };
 		71FAD7E12BBAB9C800C8064F /* NetworkFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD7E02BBAB9C800C8064F /* NetworkFrameworkTests.swift */; };
 		71FAD7E22BBAB9C800C8064F /* NetworkFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 71FAD7D42BBAB9C800C8064F /* NetworkFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71FAD7EE2BBABC9C00C8064F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FAD7EC2BBABC9C00C8064F /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		71FAD7D52BBAB9C800C8064F /* NetworkFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkFramework.docc; sourceTree = "<group>"; };
 		71FAD7DB2BBAB9C800C8064F /* NetworkFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71FAD7E02BBAB9C800C8064F /* NetworkFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFrameworkTests.swift; sourceTree = "<group>"; };
+		71FAD7EC2BBABC9C00C8064F /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				71FAD7D42BBAB9C800C8064F /* NetworkFramework.h */,
+				71FAD7EC2BBABC9C00C8064F /* Network.swift */,
 				71FAD7D52BBAB9C800C8064F /* NetworkFramework.docc */,
 			);
 			path = NetworkFramework;
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71FAD7D62BBAB9C800C8064F /* NetworkFramework.docc in Sources */,
+				71FAD7EE2BBABC9C00C8064F /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +354,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,6 +383,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,6 +402,7 @@
 		71FAD7E92BBAB9C800C8064F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CDX79FRC6X;
@@ -412,6 +419,7 @@
 		71FAD7EA2BBAB9C800C8064F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CDX79FRC6X;
